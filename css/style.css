@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif; }
+  body .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; }
+  body .converter {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-top: 100px; }
+    body .converter .first-header {
+      text-transform: uppercase; }
+    body .converter .converter-form label {
+      display: block; }
