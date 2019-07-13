@@ -3,7 +3,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  background-color: #F7F7F7; }
   body .container {
     width: 100%;
     max-width: 800px;
@@ -16,7 +17,43 @@ body {
     -ms-flex-align: center;
         align-items: center;
     margin-top: 100px; }
-    body .converter .first-header {
-      text-transform: uppercase; }
-    body .converter .converter-form label {
-      display: block; }
+    body .converter .converter-form {
+      background-color: #fff;
+      padding: 10px; }
+      body .converter .converter-form input {
+        padding: 10px;
+        border: 1px solid #E0E0E0;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        border-radius: 7px;
+        height: 40px;
+        margin-top: 5px; }
+        body .converter .converter-form input:focus {
+          outline: none; }
+      body .converter .converter-form label {
+        display: block; }
+      body .converter .converter-form button {
+        background-color: #59D999;
+        padding: 10px;
+        border: none;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        margin-left: -10px;
+        color: #fff;
+        height: 40px; }
+        body .converter .converter-form button:focus {
+          outline: none; }
+      body .converter .converter-form .pln-wrapper {
+        background-color: #fff;
+        margin-top: 20px;
+        padding: 20px; }
+        body .converter .converter-form .pln-wrapper .second-header {
+          color: gray;
+          font-size: 16px;
+          text-transform: uppercase; }
+        body .converter .converter-form .pln-wrapper .pln {
+          font-size: 30px;
+          margin-top: 30px; }
+        body .converter .converter-form .pln-wrapper .date-field {
+          text-align: left;
+          font-size: 14px; }

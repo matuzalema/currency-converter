@@ -5,27 +5,81 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
+    background-color: #F7F7F7;
 
-  .container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  .converter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        }
 
-    .first-header {
-      text-transform: uppercase;
+    .converter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        .converter-form {
+            background-color: #fff;
+            padding: 10px;
+
+            input {
+                padding: 10px;
+                border: 1px solid #E0E0E0;
+                border-top-left-radius: 7px;
+                border-bottom-left-radius: 7px;
+                border-radius: 7px;
+                height: 40px;
+                margin-top: 5px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            label {
+                display: block;
+            }
+
+            button {
+                background-color: #59D999;
+                padding: 10px;
+                border: none;
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+                margin-left: -10px;
+                color: #fff;
+                height: 40px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .pln-wrapper {
+                background-color: #fff;
+                margin-top: 20px;
+                padding: 20px;
+
+                .second-header {
+                    color:  rgb(128, 128, 128);
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+                
+                .pln {
+                    font-size: 30px;
+                    margin-top: 30px;
+                }
+                
+                .date-field {
+                    text-align: left;
+                    font-size: 14px;
+                }
+               
+            }
+        }
     }
-
-    .converter-form {
-      label {
-        display: block;
-      }
-    }
-  }
 }
+
